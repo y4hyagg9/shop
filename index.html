@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArcNexus.gg — Premium Gaming Marketplace | Buy & Sell Game Assets</title>
+  <meta name="description" content="ArcNexus.gg is the ultimate gaming marketplace to buy and sell game assets, weapons, blueprints, and services. Secure, fast, and trusted by 50,000+ gamers.">
+  <link rel="canonical" href="https://www.arcnexus.gg/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://www.arcnexus.gg/">
+  <meta property="og:title"       content="ArcNexus.gg — Premium Gaming Marketplace">
+  <meta property="og:description" content="Buy & sell game assets, weapons, blueprints, and services on the most trusted gaming marketplace.">
+  <meta property="og:image"       content="https://www.arcnexus.gg/assets/og-image.jpg">
+  <meta property="og:site_name"   content="ArcNexus.gg">
+  <meta property="og:locale"      content="en_US">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@arcnexusgg">
+  <meta name="twitter:title"       content="ArcNexus.gg — Premium Gaming Marketplace">
+  <meta name="twitter:description" content="Buy & sell game assets, weapons, blueprints, and services. Trusted by 50,000+ gamers.">
+  <meta name="twitter:image"       content="https://www.arcnexus.gg/assets/og-image.jpg">
+
+  <!-- Security -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:;">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ff6b2b'/><text y='22' x='4' font-size='18' font-weight='bold' fill='white'>A</text></svg>">
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ArcNexus.gg",
+    "url": "https://www.arcnexus.gg",
+    "logo": "https://www.arcnexus.gg/assets/logo.png",
+    "description": "Premium gaming marketplace for buying and selling game assets.",
+    "sameAs": [
+      "https://twitter.com/arcnexusgg",
+      "https://discord.gg/arcnexus"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "support@arcnexus.gg",
+      "availableLanguage": "English"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Website + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ArcNexus.gg",
+    "url": "https://www.arcnexus.gg",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.arcnexus.gg/marketplace.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does ArcNexus.gg protect my purchase?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use a secure escrow system. Your payment is held safely until you confirm delivery of your purchase. If something goes wrong, our support team will mediate and issue a refund."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I become a seller on ArcNexus.gg?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Register for a free account, complete identity verification, and list your first item. Sellers keep up to 95% of each sale after our platform fee."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods are accepted?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We accept credit/debit cards, PayPal, cryptocurrency (BTC, ETH), and various regional payment methods."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Page Loader -->
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="loader-arc"></div>
+  </div>
+
+  <!-- ── Navigation ── -->
+  <header>
+    <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo" aria-label="ArcNexus.gg Home">
+          <div class="logo-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 2L18 7V13L10 18L2 13V7L10 2Z" stroke="white" stroke-width="1.5" fill="none"/>
+              <circle cx="10" cy="10" r="3" fill="white"/>
+            </svg>
+          </div>
+          <span class="logo-text">
+            <span>Arc</span><span>Nexus</span><span class="logo-dot">.</span><span class="logo-tld">gg</span>
+          </span>
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links" role="list">
+          <li class="nav-item">
+            <a href="marketplace.html" class="nav-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>
+              Marketplace
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Top Sellers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Support</a>
+          </li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-ghost btn-sm">Log In</a>
+          <a href="register.html" class="btn btn-primary btn-sm">Sign Up</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-bg" id="mobileMenuBg"></div>
+      <div class="mobile-menu-panel">
+        <a href="marketplace.html" class="mobile-nav-link">🛒 Marketplace</a>
+        <a href="#top-sellers"     class="mobile-nav-link">⭐ Top Sellers</a>
+        <a href="contact.html"     class="mobile-nav-link">💬 Support</a>
+        <div style="height:1px;background:var(--border);margin:8px 0;"></div>
+        <a href="login.html"    class="mobile-nav-link">Log In</a>
+        <a href="register.html" class="mobile-nav-link btn btn-primary btn-block" style="margin-top:8px;justify-content:center;">Sign Up Free</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ── Hero Section ── -->
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+      <div class="hero-content container">
+        <div class="hero-badge" role="status">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Live Marketplace — 2,400+ Active Listings
+        </div>
+
+        <h1 class="hero-title" id="heroTitle">
+          The Ultimate<br>
+          <span class="hero-title-line2">Gaming Marketplace</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Buy and sell rare weapons, blueprints, resources, and services. Secured by escrow, trusted by over 50,000 gamers worldwide.
+        </p>
+
+        <!-- Search Bar -->
+        <div class="hero-cta" role="search" aria-label="Search listings">
+          <div style="display:flex;gap:12px;width:100%;max-width:620px;flex-wrap:wrap;justify-content:center;">
+            <div style="flex:1;min-width:260px;position:relative;">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text-muted);" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <input
+                id="heroSearch"
+                type="search"
+                class="search-input"
+                placeholder="Search weapons, blueprints, services…"
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="Search listings"
+                style="padding-left:44px;font-size:0.95rem;"
+              >
+            </div>
+            <select id="heroCategory" class="search-category" aria-label="Category filter">
+              <option value="">All Categories</option>
+              <option value="weapons">⚔️ Weapons</option>
+              <option value="blueprints">📐 Blueprints</option>
+              <option value="resources">💎 Resources</option>
+              <option value="services">🛠️ Services</option>
+              <option value="other">📦 Other</option>
+            </select>
+            <a href="marketplace.html" class="btn btn-primary btn-lg btn-round">
+              Browse All →
+            </a>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats" aria-label="Platform statistics">
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="50000" data-suffix="+">0</div>
+            <div class="hero-stat-label">Registered Gamers</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="2400" data-suffix="+">0</div>
+            <div class="hero-stat-label">Active Listings</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-prefix="$" data-count="1200000" data-suffix="+">0</div>
+            <div class="hero-stat-label">Total Trades</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="99" data-suffix="%">0</div>
+            <div class="hero-stat-label">Dispute Resolution</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Featured Listings ── -->
+    <section class="section" id="featured" aria-labelledby="featuredTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">🔥 Hot Right Now</div>
+          <h2 class="section-title" id="featuredTitle">Featured Listings</h2>
+          <p class="section-subtitle">Handpicked premium items from our top-rated sellers</p>
+        </div>
+
+        <div class="featured-grid" role="list">
+          <!-- Listing Card 1 -->
+          <article class="listing-card reveal" data-category="weapons" data-price="249.99" data-date="1720000000" data-views="843" role="listitem">
+            <a href="listing.html" aria-label="View Dragon Flame AK-47 Skin listing">
+              <div class="listing-card-img">
+                <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;background:linear-gradient(135deg,#1a0a00,#3d1a00)">
+                  <defs><radialGradient id="g1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff6b2b" stop-opacity="0.6"/><stop offset="100%" stop-color="#1a0a00" stop-opacity="0"/></radialGradient></defs>
+                  <ellipse cx="200" cy="125" rx="140" ry="90" fill="url(#g1)"/>
+                  <text x="200" y="115" text-anchor="middle" font-size="48" fill="#ff6b2b" opacity="0.8">⚔️</text>
+                  <text x="200" y="160" text-anchor="middle" font-size="13" fill="#ff8c4a" font-weight="bold" letter-spacing="2">DRAGON FLAME</text>
+                </svg>
+                <div class="listing-card-category">
+                  <span class="badge badge-orange">Weapons</span>
+                </div>
+                <div class="listing-card-featured">
+                  <span class="badge badge-cyan">⭐ Featured</span>
+                </div>
+              </div>
+            </a>
+            <div class="listing-card-body">
+              <h3 class="listing-card-title"><a href="listing.html">Dragon Flame AK-47 Skin — Factory New</a></h3>
+              <div class="listing-card-seller">
+                <svg viewBox="0 0 20 20" style="width:20px;height:20px;border-radius:50%;background:var(--orange-glow)"><circle cx="10" cy="10" r="10" fill="rgba(255,107,43,0.2)"/><text x="10" y="14" text-anchor="middle" font-size="10" fill="#ff6b2b">D</text></svg>
+                <span>by</span>
+                <span class="listing-card-seller-name">DragonMaster</span>
+                <span class="badge badge-success" style="font-size:0.65rem;">Verified</span>
+              </div>
+            </div>
+            <div class="listing-card-footer">
+              <div>
+                <span class="listing-card-price">$249.99</span>
+                <span class="listing-card-price-old">$320.00</span>
+              </div>
+              <a href="listing.html" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </article>
+
+          <!-- Listing Card 2 -->
+          <article class="listing-card reveal" data-delay="80" data-category="blueprints" data-price="89.99" data-date="1720100000" data-views="512" role="listitem">
+            <a href="listing.html">
+              <div class="listing-card-img">
+                <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;background:linear-gradient(135deg,#001a2b,#002d44)">
+                  <defs><radialGradient id="g2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#00d4ff" stop-opacity="0.5"/><stop offset="100%" stop-color="#001a2b" stop-opacity="0"/></radialGradient></defs>
+                  <ellipse cx="200" cy="125" rx="140" ry="90" fill="url(#g2)"/>
+                  <text x="200" y="115" text-anchor="middle" font-size="48" fill="#00d4ff" opacity="0.8">📐</text>
+                  <text x="200" y="160" text-anchor="middle" font-size="13" fill="#33ddff" font-weight="bold" letter-spacing="2">NEXUS BLUEPRINT</text>
+                </svg>
+                <div class="listing-card-category">
+                  <span class="badge badge-cyan">Blueprints</span>
+                </div>
+              </div>
+            </a>
+            <div class="listing-card-body">
+              <h3 class="listing-card-title"><a href="listing.html">Tier-5 Nexus Blueprint — Fully Unlocked</a></h3>
+              <div class="listing-card-seller">
+                <svg viewBox="0 0 20 20" style="width:20px;height:20px;border-radius:50%;background:var(--cyan-glow)"><circle cx="10" cy="10" r="10" fill="rgba(0,212,255,0.2)"/><text x="10" y="14" text-anchor="middle" font-size="10" fill="#00d4ff">N</text></svg>
+                <span>by</span>
+                <span class="listing-card-seller-name">NexusForge</span>
+                <span class="badge badge-success" style="font-size:0.65rem;">⭐ Top Seller</span>
+              </div>
+            </div>
+            <div class="listing-card-footer">
+              <div><span class="listing-card-price">$89.99</span></div>
+              <a href="listing.html" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </article>
+
+          <!-- Listing Card 3 -->
+          <article class="listing-card reveal" data-delay="160" data-category="resources" data-price="34.50" data-date="1720200000" data-views="390" role="listitem">
+            <a href="listing.html">
+              <div class="listing-card-img">
+                <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;background:linear-gradient(135deg,#001a10,#002d1a)">
+                  <defs><radialGradient id="g3" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#00e676" stop-opacity="0.5"/><stop offset="100%" stop-color="#001a10" stop-opacity="0"/></radialGradient></defs>
+                  <ellipse cx="200" cy="125" rx="140" ry="90" fill="url(#g3)"/>
+                  <text x="200" y="115" text-anchor="middle" font-size="48" fill="#00e676" opacity="0.8">💎</text>
+                  <text x="200" y="160" text-anchor="middle" font-size="13" fill="#00e676" font-weight="bold" letter-spacing="2">RARE CRYSTALS</text>
+                </svg>
+                <div class="listing-card-category">
+                  <span class="badge badge-success">Resources</span>
+                </div>
+              </div>
+            </a>
+            <div class="listing-card-body">
+              <h3 class="listing-card-title"><a href="listing.html">x500 Rare Crystal Pack — Instant Delivery</a></h3>
+              <div class="listing-card-seller">
+                <svg viewBox="0 0 20 20" style="width:20px;height:20px;border-radius:50%;background:rgba(0,230,118,0.1)"><circle cx="10" cy="10" r="10" fill="rgba(0,230,118,0.2)"/><text x="10" y="14" text-anchor="middle" font-size="10" fill="#00e676">C</text></svg>
+                <span>by</span>
+                <span class="listing-card-seller-name">CrystalVault</span>
+              </div>
+            </div>
+            <div class="listing-card-footer">
+              <div><span class="listing-card-price">$34.50</span></div>
+              <a href="listing.html" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </article>
+
+          <!-- Listing Card 4 -->
+          <article class="listing-card reveal" data-delay="240" data-category="services" data-price="149.00" data-date="1720300000" data-views="920" role="listitem">
+            <a href="listing.html">
+              <div class="listing-card-img">
+                <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;background:linear-gradient(135deg,#1a001a,#2d002d)">
+                  <defs><radialGradient id="g4" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#b388ff" stop-opacity="0.5"/><stop offset="100%" stop-color="#1a001a" stop-opacity="0"/></radialGradient></defs>
+                  <ellipse cx="200" cy="125" rx="140" ry="90" fill="url(#g4)"/>
+                  <text x="200" y="115" text-anchor="middle" font-size="48" fill="#b388ff" opacity="0.8">🛠️</text>
+                  <text x="200" y="160" text-anchor="middle" font-size="13" fill="#b388ff" font-weight="bold" letter-spacing="2">PRO COACHING</text>
+                </svg>
+                <div class="listing-card-category">
+                  <span class="badge badge-warning">Services</span>
+                </div>
+                <div class="listing-card-featured">
+                  <span class="badge badge-danger">🔥 Hot</span>
+                </div>
+              </div>
+            </a>
+            <div class="listing-card-body">
+              <h3 class="listing-card-title"><a href="listing.html">Pro Rank Boost Service — GM Guaranteed</a></h3>
+              <div class="listing-card-seller">
+                <svg viewBox="0 0 20 20" style="width:20px;height:20px;border-radius:50%;background:rgba(179,136,255,0.1)"><circle cx="10" cy="10" r="10" fill="rgba(179,136,255,0.2)"/><text x="10" y="14" text-anchor="middle" font-size="10" fill="#b388ff">P</text></svg>
+                <span>by</span>
+                <span class="listing-card-seller-name">ProBooster</span>
+                <span class="badge badge-success" style="font-size:0.65rem;">Verified</span>
+              </div>
+            </div>
+            <div class="listing-card-footer">
+              <div><span class="listing-card-price">$149.00</span></div>
+              <a href="listing.html" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align:center;margin-top:var(--sp-10);">
+          <a href="marketplace.html" class="btn btn-outline btn-lg btn-round">
+            View All Listings →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Latest Listings + Top Sellers ── -->
+    <section class="section" style="background:var(--bg-deep);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+      <div class="container">
+        <div class="grid-2" style="gap:var(--sp-12);align-items:start;">
+
+          <!-- Latest Listings -->
+          <div>
+            <div class="section-header" style="text-align:left;margin-bottom:var(--sp-6);" id="latest">
+              <div class="section-eyebrow" style="justify-content:flex-start;">🕐 Just Listed</div>
+              <h2 class="section-title" style="font-size:1.5rem;">Latest Listings</h2>
+            </div>
+            <div class="latest-list reveal" role="list">
+              <a href="listing.html" class="listing-row" role="listitem">
+                <svg viewBox="0 0 72 56" class="listing-row-img" style="width:72px;height:56px;border-radius:10px;background:linear-gradient(135deg,#1a0800,#2d1500)"><text x="36" y="34" text-anchor="middle" font-size="24" fill="#ff6b2b">🗡️</text></svg>
+                <div class="listing-row-info">
+                  <div class="listing-row-title">Void Ripper Blade — Enchanted +5</div>
+                  <div class="listing-row-meta">Weapons · by ShadowForge · 2 min ago</div>
+                </div>
+                <div class="listing-row-price">$78.00</div>
+              </a>
+              <a href="listing.html" class="listing-row" role="listitem">
+                <svg viewBox="0 0 72 56" class="listing-row-img" style="width:72px;height:56px;border-radius:10px;background:linear-gradient(135deg,#00101a,#001d2b)"><text x="36" y="34" text-anchor="middle" font-size="24" fill="#00d4ff">📜</text></svg>
+                <div class="listing-row-info">
+                  <div class="listing-row-title">Mech Blueprint — Iron Titan Schematic</div>
+                  <div class="listing-row-meta">Blueprints · by TechWard · 8 min ago</div>
+                </div>
+                <div class="listing-row-price">$55.00</div>
+              </a>
+              <a href="listing.html" class="listing-row" role="listitem">
+                <svg viewBox="0 0 72 56" class="listing-row-img" style="width:72px;height:56px;border-radius:10px;background:linear-gradient(135deg,#001000,#001d00)"><text x="36" y="34" text-anchor="middle" font-size="24" fill="#00e676">⛏️</text></svg>
+                <div class="listing-row-info">
+                  <div class="listing-row-title">Sulfur x1000 + Charcoal Pack</div>
+                  <div class="listing-row-meta">Resources · by ResourceKing · 15 min ago</div>
+                </div>
+                <div class="listing-row-price">$12.50</div>
+              </a>
+              <a href="listing.html" class="listing-row" role="listitem">
+                <svg viewBox="0 0 72 56" class="listing-row-img" style="width:72px;height:56px;border-radius:10px;background:linear-gradient(135deg,#0a001a,#150029)"><text x="36" y="34" text-anchor="middle" font-size="24" fill="#b388ff">🎮</text></svg>
+                <div class="listing-row-info">
+                  <div class="listing-row-title">Coaching Session — 2hr Ranked Grind</div>
+                  <div class="listing-row-meta">Services · by CoachPro · 22 min ago</div>
+                </div>
+                <div class="listing-row-price">$45.00</div>
+              </a>
+              <a href="listing.html" class="listing-row" role="listitem">
+                <svg viewBox="0 0 72 56" class="listing-row-img" style="width:72px;height:56px;border-radius:10px;background:linear-gradient(135deg,#1a1000,#2d1c00)"><text x="36" y="34" text-anchor="middle" font-size="24" fill="#ffca28">🏆</text></svg>
+                <div class="listing-row-info">
+                  <div class="listing-row-title">Legendary Helm of Eternity</div>
+                  <div class="listing-row-meta">Weapons · by LegendaryVault · 31 min ago</div>
+                </div>
+                <div class="listing-row-price">$210.00</div>
+              </a>
+            </div>
+            <div style="margin-top:var(--sp-5);">
+              <a href="marketplace.html" class="btn btn-outline btn-block" style="border-radius:var(--r-full);">View All New Listings →</a>
+            </div>
+          </div>
+
+          <!-- Top Sellers -->
+          <div id="top-sellers">
+            <div class="section-header" style="text-align:left;margin-bottom:var(--sp-6);">
+              <div class="section-eyebrow" style="justify-content:flex-start;">⭐ Most Trusted</div>
+              <h2 class="section-title" style="font-size:1.5rem;">Top Sellers</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-4);" role="list">
+              <!-- Seller 1 -->
+              <div class="seller-card reveal" role="listitem">
+                <svg viewBox="0 0 72 72" class="seller-avatar"><circle cx="36" cy="36" r="36" fill="rgba(255,107,43,0.2)"/><text x="36" y="44" text-anchor="middle" font-size="28" fill="#ff6b2b">D</text></svg>
+                <div class="seller-name">DragonMaster</div>
+                <div class="seller-tag">#1 Top Seller</div>
+                <div class="seller-rating">
+                  <span>★★★★★</span>
+                  <span style="color:var(--text-muted);">5.0</span>
+                </div>
+                <div class="seller-stats">
+                  <div><div class="seller-stat-val" style="color:var(--orange);">1,240</div><div class="seller-stat-key">Sales</div></div>
+                  <div><div class="seller-stat-val" style="color:var(--cyan);">99.8%</div><div class="seller-stat-key">Positive</div></div>
+                </div>
+              </div>
+              <!-- Seller 2 -->
+              <div class="seller-card reveal" data-delay="80" role="listitem">
+                <svg viewBox="0 0 72 72" class="seller-avatar"><circle cx="36" cy="36" r="36" fill="rgba(0,212,255,0.2)"/><text x="36" y="44" text-anchor="middle" font-size="28" fill="#00d4ff">N</text></svg>
+                <div class="seller-name">NexusForge</div>
+                <div class="seller-tag">#2 Top Seller</div>
+                <div class="seller-rating">
+                  <span>★★★★★</span>
+                  <span style="color:var(--text-muted);">5.0</span>
+                </div>
+                <div class="seller-stats">
+                  <div><div class="seller-stat-val" style="color:var(--orange);">987</div><div class="seller-stat-key">Sales</div></div>
+                  <div><div class="seller-stat-val" style="color:var(--cyan);">99.6%</div><div class="seller-stat-key">Positive</div></div>
+                </div>
+              </div>
+              <!-- Seller 3 -->
+              <div class="seller-card reveal" data-delay="160" role="listitem">
+                <svg viewBox="0 0 72 72" class="seller-avatar"><circle cx="36" cy="36" r="36" fill="rgba(179,136,255,0.2)"/><text x="36" y="44" text-anchor="middle" font-size="28" fill="#b388ff">P</text></svg>
+                <div class="seller-name">ProBooster</div>
+                <div class="seller-tag">#3 Top Seller</div>
+                <div class="seller-rating">
+                  <span>★★★★★</span>
+                  <span style="color:var(--text-muted);">4.9</span>
+                </div>
+                <div class="seller-stats">
+                  <div><div class="seller-stat-val" style="color:var(--orange);">764</div><div class="seller-stat-key">Sales</div></div>
+                  <div><div class="seller-stat-val" style="color:var(--cyan);">99.1%</div><div class="seller-stat-key">Positive</div></div>
+                </div>
+              </div>
+              <!-- Seller 4 -->
+              <div class="seller-card reveal" data-delay="240" role="listitem">
+                <svg viewBox="0 0 72 72" class="seller-avatar"><circle cx="36" cy="36" r="36" fill="rgba(0,230,118,0.2)"/><text x="36" y="44" text-anchor="middle" font-size="28" fill="#00e676">C</text></svg>
+                <div class="seller-name">CrystalVault</div>
+                <div class="seller-tag">#4 Top Seller</div>
+                <div class="seller-rating">
+                  <span>★★★★☆</span>
+                  <span style="color:var(--text-muted);">4.8</span>
+                </div>
+                <div class="seller-stats">
+                  <div><div class="seller-stat-val" style="color:var(--orange);">612</div><div class="seller-stat-key">Sales</div></div>
+                  <div><div class="seller-stat-val" style="color:var(--cyan);">98.9%</div><div class="seller-stat-key">Positive</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How It Works ── -->
+    <section class="section" id="how-it-works" aria-labelledby="howTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">✅ Simple Process</div>
+          <h2 class="section-title" id="howTitle">How ArcNexus Works</h2>
+          <p class="section-subtitle">Buy or sell in minutes. Every transaction protected.</p>
+        </div>
+
+        <div class="how-grid">
+          <div class="how-card reveal" data-delay="0">
+            <div class="how-icon" aria-hidden="true">🔍</div>
+            <div class="how-step">Step 01</div>
+            <h3 class="how-title">Browse Listings</h3>
+            <p class="how-desc">Search thousands of verified listings by category, game, price, or seller rating. Find exactly what you're looking for.</p>
+          </div>
+          <div class="how-card reveal" data-delay="100">
+            <div class="how-icon" aria-hidden="true">🛒</div>
+            <div class="how-step">Step 02</div>
+            <h3 class="how-title">Secure Purchase</h3>
+            <p class="how-desc">Pay via card, PayPal, or crypto. Your funds are held in escrow until you confirm receipt — 100% protected.</p>
+          </div>
+          <div class="how-card reveal" data-delay="200">
+            <div class="how-icon" aria-hidden="true">📦</div>
+            <div class="how-step">Step 03</div>
+            <h3 class="how-title">Instant Delivery</h3>
+            <p class="how-desc">Receive your purchase directly in-game or via our secure transfer system. Most orders arrive in under 15 minutes.</p>
+          </div>
+          <div class="how-card reveal" data-delay="300">
+            <div class="how-icon" aria-hidden="true">⭐</div>
+            <div class="how-step">Step 04</div>
+            <h3 class="how-title">Rate & Review</h3>
+            <p class="how-desc">Leave honest feedback for the seller. Your review helps the community and rewards trustworthy traders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Discord Banner ── -->
+    <section class="section--compact" aria-label="Discord community">
+      <div class="container">
+        <div class="discord-banner reveal">
+          <div class="discord-banner-icon" aria-hidden="true">💬</div>
+          <div style="flex:1;">
+            <h3 class="discord-banner-title">Join Our Discord Community</h3>
+            <p class="discord-banner-sub">Get live trade alerts, exclusive deals, and direct seller access. 12,000+ members and growing.</p>
+          </div>
+          <a href="https://discord.gg/arcnexus" class="btn-discord" target="_blank" rel="noopener noreferrer" aria-label="Join ArcNexus Discord server">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.054a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+            Join Discord
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ Section ── -->
+    <section class="section" id="faq" style="background:var(--bg-deep);border-top:1px solid var(--border);" aria-labelledby="faqTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">❓ Common Questions</div>
+          <h2 class="section-title" id="faqTitle">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about ArcNexus.gg</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false">
+              How does ArcNexus.gg protect my purchase?
+              <div class="faq-icon" aria-hidden="true">+</div>
+            </div>
+            <div class="faq-answer" role="region">
+              <p>We use a secure escrow system. Your payment is held safely until you confirm delivery of your purchase. If something goes wrong, our 24/7 support team will mediate the dispute and issue a full refund if the seller fails to deliver.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false">
+              How do I become a seller on ArcNexus.gg?
+              <div class="faq-icon" aria-hidden="true">+</div>
+            </div>
+            <div class="faq-answer" role="region">
+              <p>Register for a free account, complete our quick identity verification process, and list your first item in under 5 minutes. Sellers keep up to 95% of each sale after our small platform fee. No subscription required.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false">
+              What payment methods are accepted?
+              <div class="faq-icon" aria-hidden="true">+</div>
+            </div>
+            <div class="faq-answer" role="region">
+              <p>We accept credit and debit cards (Visa, Mastercard, Amex), PayPal, and cryptocurrency (Bitcoin, Ethereum, USDT). Additional regional payment methods may be available depending on your location.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false">
+              How long does delivery take?
+              <div class="faq-icon" aria-hidden="true">+</div>
+            </div>
+            <div class="faq-answer" role="region">
+              <p>Most digital goods and resources are delivered instantly or within 15 minutes. Services and custom orders may take up to 24 hours. Each listing clearly states the estimated delivery time before you purchase.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false">
+              Is ArcNexus.gg safe and legitimate?
+              <div class="faq-icon" aria-hidden="true">+</div>
+            </div>
+            <div class="faq-answer" role="region">
+              <p>Absolutely. ArcNexus.gg is a fully legitimate marketplace operating since 2022. All sellers are verified, all transactions are escrow-protected, and we maintain a 99% dispute resolution rate. Over 50,000 gamers trust us daily.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false">
+              Can I get a refund if I'm not satisfied?
+              <div class="faq-icon" aria-hidden="true">+</div>
+            </div>
+            <div class="faq-answer" role="region">
+              <p>Yes. If an item is not as described or delivery fails, you can open a dispute within 72 hours of purchase. Our team will review the evidence and issue a full refund if the seller is at fault. Buyer protection is our top priority.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="ArcNexus.gg">
+            <div class="logo-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L18 7V13L10 18L2 13V7L10 2Z" stroke="white" stroke-width="1.5" fill="none"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
+            </div>
+            <span class="logo-text">
+              <span>Arc</span><span>Nexus</span><span class="logo-dot">.</span><span class="logo-tld">gg</span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">The premier gaming marketplace. Buy and sell with confidence, backed by escrow protection and a community of 50,000+ trusted traders.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://discord.gg/arcnexus" class="social-link discord" target="_blank" rel="noopener" aria-label="Discord">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.054a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+            </a>
+            <a href="https://twitter.com/arcnexusgg" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="Twitch">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Marketplace Links -->
+        <nav aria-label="Marketplace navigation">
+          <h4 class="footer-heading">Marketplace</h4>
+          <ul class="footer-links">
+            <li><a href="marketplace.html" class="footer-link">Browse All Listings</a></li>
+            <li><a href="marketplace.html?cat=weapons" class="footer-link">Weapons</a></li>
+            <li><a href="marketplace.html?cat=blueprints" class="footer-link">Blueprints</a></li>
+            <li><a href="marketplace.html?cat=resources" class="footer-link">Resources</a></li>
+            <li><a href="marketplace.html?cat=services" class="footer-link">Services</a></li>
+            <li><a href="register.html" class="footer-link">Sell Your Items</a></li>
+          </ul>
+        </nav>
+
+        <!-- Company Links -->
+        <nav aria-label="Company navigation">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Press Kit</a></li>
+            <li><a href="#" class="footer-link">Affiliate Program</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+          </ul>
+        </nav>
+
+        <!-- Legal Links -->
+        <nav aria-label="Legal navigation">
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Cookie Policy</a></li>
+            <li><a href="#" class="footer-link">GDPR Compliance</a></li>
+            <li><a href="#" class="footer-link">Dispute Resolution</a></li>
+            <li><a href="sitemap.xml" class="footer-link">Sitemap</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2024 ArcNexus.gg — All rights reserved. Not affiliated with any game publisher.
+        </p>
+        <div class="footer-legal">
+          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
